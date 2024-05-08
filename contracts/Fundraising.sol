@@ -9,7 +9,7 @@ contract Fundraising{
     uint256 public finishTime = block.timestamp + 2 weeks;
 
     constructor(uint256 _targetAmount){
-        targetAmount = _targetAmount; ///컨트랙을 배포할 때 Owner가 Target Amound(모금하고자 하는 금액)을 명시하도록 하겠다는 뜻.
+        targetAmount = _targetAmount; ///컨트랙을 배포할 때 Owner가 Target Amount(모금하고자 하는 금액)을 명시하도록 하겠다는 뜻.
         owner = msg.sender; ///해당 컨트랙을 작성하는 자의 주소
     }
     receive()external payable{
